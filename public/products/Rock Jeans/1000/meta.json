@@ -1,0 +1,12 @@
+{
+  "brand": "Rock Jeans",
+  "code": "1000",
+  "sizes": ["34", "36", "38", "40", "42"],
+  "price": 119.9,
+  "sale_price": 89.9,
+  "color": "Albastru",
+  "type": "Skinny fit",
+  "title": "Blugi skinny Rock Jeans cu rupturi și tiv nefinisat",
+  "description": "Pantaloni confecționați din denim albastru cu un aspect ușor prespălat, evidențiați în imaginea rock-jeans-engros-1000-1_MAIN.jpeg. Modelul prezintă o croială skinny, talie înaltă și buzunare clasice, fiind decorat cu rupturi texturate pe picioare, zgârieturi fine și finisaj de tiv nefinisat cu franjuri discrete la bază.",
+  "batal": false
+}
