@@ -1,7 +1,7 @@
 export function HeroBanner() {
   return (
     <a
-      href="https://wa.me/40712345678"
+      href="https://wa.me/40745460352"
       target="_blank"
       rel="noopener noreferrer"
     >
