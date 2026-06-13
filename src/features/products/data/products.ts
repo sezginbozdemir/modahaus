@@ -1329,7 +1329,7 @@ export const products: Product[] = [
     ]
   },
   {
-    "id": "102",
+    "id": "1022",
     "brand": "KAROL",
     "title": "Blugi skinny Karol cu rupturi discrete și tiv franjurat",
     "description": "Adaugă un plus de dinamism garderobei tale cu acești blugi din denim albastru clasic, evidențiați prin zgârieturi fine și detalii uzate. Croiala strânsă pe picior pune frumos în valoare silueta, în timp ce terminarea asimetrică și intens franjurată de la bază oferă o notă modernă și relaxată, perfectă pentru combinații casual cu teniși sau botine",
@@ -1353,10 +1353,10 @@ export const products: Product[] = [
       "40": 1,
       "42": 1
     },
-    "image": "/products/KAROL/102/karol-engros-102-2_MAIN.jpeg",
+    "image": "/products/KAROL/1022/karol-engros-102-2_MAIN.jpeg",
     "extraImages": [
-      "/products/KAROL/102/karol-engros-102-1.jpeg",
-      "/products/KAROL/102/karol-engros-102-3.jpeg"
+      "/products/KAROL/1022/karol-engros-102-1.jpeg",
+      "/products/KAROL/1022/karol-engros-102-3.jpeg"
     ]
   },
   {
@@ -3027,7 +3027,7 @@ export const products: Product[] = [
     "id": "1000",
     "brand": "Rock Jeans",
     "title": "Blugi skinny Rock Jeans cu rupturi și tiv nefinisat",
-    "description": "Pantaloni confecționați din denim albastru cu un aspect ușor prespălat, evidențiați în imaginea rock-jeans-engros-1000-1_MAIN.jpeg. Modelul prezintă o croială skinny, talie înaltă și buzunare clasice, fiind decorat cu rupturi texturate pe picioare, zgârieturi fine și finisaj de tiv nefinisat cu franjuri discrete la bază.",
+    "description": "Pantaloni confecționați din denim albastru cu un aspect ușor prespălat. Modelul prezintă o croială skinny, talie înaltă și buzunare clasice, fiind decorat cu rupturi texturate pe picioare, zgârieturi fine și finisaj de tiv nefinisat cu franjuri discrete la bază.",
     "sizes": "34 - 42",
     "sizeList": [
       "34",
