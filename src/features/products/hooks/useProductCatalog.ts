@@ -6,6 +6,10 @@ import { useCatalogStore } from "../../../store/catalog-store";
 export type SortKey = "code-asc" | "code-desc" | "price-asc" | "price-desc";
 
 export function sortProducts(list: Product[], key: SortKey): Product[] {
+  const getEffectivePrice = (p: Product): number => {
+    return p.salePrice ?? p.unitPrice;
+  };
+
   return [...list].sort((a, b) => {
     switch (key) {
       case "code-asc":
@@ -13,9 +17,11 @@ export function sortProducts(list: Product[], key: SortKey): Product[] {
       case "code-desc":
         return b.id.localeCompare(a.id);
       case "price-asc":
-        return a.unitPrice - b.unitPrice;
+        return getEffectivePrice(a) - getEffectivePrice(b);
       case "price-desc":
-        return b.unitPrice - a.unitPrice;
+        return getEffectivePrice(b) - getEffectivePrice(a);
+      default:
+        return 0;
     }
   });
 }
