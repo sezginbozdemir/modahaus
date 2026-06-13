@@ -19,9 +19,9 @@ function TrustItem({ icon, label }: { icon: React.ReactNode; label: string }) {
 export function Header() {
   return (
     <header className="sticky top-0 z-50">
-      <div className="hidden sm:block bg-gray-950 border-b border-white/5">
+      <div className="bg-gray-950 border-b border-white/5">
         <div className="max-w-7xl mx-auto px-4 h-8 flex items-center justify-between">
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 sm:gap-4">
             <TrustItem
               icon={<FaTruckFast size={11} />}
               label="Livrare 24–48h"
@@ -31,13 +31,17 @@ export function Header() {
               icon={<FaArrowRotateLeft size={11} />}
               label="Retur 14 zile"
             />
-            <span className="text-white/10">·</span>
-            <TrustItem
-              icon={<FaMoneyBillWave size={11} />}
-              label="Plată ramburs"
-            />
-            <span className="text-white/10">·</span>
-            <TrustItem icon={<FaHeadset size={11} />} label="L–S 10:00–18:00" />
+            <span className="hidden min-[400px]:inline text-white/10">·</span>
+            <span className="hidden min-[400px]:inline">
+              <TrustItem icon={<FaMoneyBillWave size={11} />} label="Ramburs" />
+            </span>
+            <span className="hidden sm:inline text-white/10">·</span>
+            <span className="hidden sm:inline">
+              <TrustItem
+                icon={<FaHeadset size={11} />}
+                label="L–S 10:00–18:00"
+              />
+            </span>
           </div>
           <a
             href={buildWhatsAppGeneralLink()}
@@ -46,7 +50,8 @@ export function Header() {
             className="inline-flex items-center gap-1.5 text-[11px] text-gray-400 hover:text-white transition-colors"
           >
             <FaWhatsapp className="text-green-500" size={11} />
-            Suport WhatsApp
+            <span className="hidden sm:inline">Suport WhatsApp</span>
+            <span className="sm:hidden">WhatsApp</span>
           </a>
         </div>
       </div>
@@ -54,7 +59,6 @@ export function Header() {
       {/* Main bar */}
       <div className="bg-white border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between gap-4">
-          {/* Logo */}
           <div className="flex-shrink-0">
             <picture>
               <source media="(min-width: 640px)" srcSet="/mh-m.png" />
@@ -66,7 +70,6 @@ export function Header() {
             </picture>
           </div>
 
-          {/* Trust pills — desktop only */}
           <div className="hidden lg:flex items-center gap-2">
             {[
               { icon: <FaTruckFast size={13} />, label: "Livrare rapidă" },
@@ -83,8 +86,6 @@ export function Header() {
               </span>
             ))}
           </div>
-
-          {/* CTA */}
           <a
             href={buildWhatsAppGeneralLink()}
             target="_blank"
@@ -98,20 +99,6 @@ export function Header() {
             <span className="hidden sm:inline">Contact WhatsApp</span>
             <span className="sm:hidden">WhatsApp</span>
           </a>
-        </div>
-      </div>
-
-      {/* Mobile trust bar */}
-      <div className="sm:hidden bg-gray-950 border-b border-white/5">
-        <div className="max-w-7xl mx-auto px-4 h-9 flex items-center justify-between">
-          <TrustItem icon={<FaTruckFast size={11} />} label="Livrare 24–48h" />
-          <span className="text-white/10">·</span>
-          <TrustItem
-            icon={<FaArrowRotateLeft size={11} />}
-            label="Retur 14 zile"
-          />
-          <span className="text-white/10">·</span>
-          <TrustItem icon={<FaMoneyBillWave size={11} />} label="Ramburs" />
         </div>
       </div>
     </header>

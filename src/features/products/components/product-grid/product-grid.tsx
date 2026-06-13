@@ -1,9 +1,12 @@
 import { ProductCard } from "../product-card/produt-card";
 import { IoChevronDown } from "react-icons/io5";
 import { useProductCatalog } from "../../hooks/useProductCatalog";
+import { useCatalogStore } from "../../../../store/catalog-store";
 
 export function ProductGrid() {
   const { visible, hasMore, loadMore } = useProductCatalog();
+
+  const { totalFiltered } = useCatalogStore();
 
   if (visible.length === 0) {
     return (
@@ -44,7 +47,7 @@ export function ProductGrid() {
             />
           </button>
           <p className="text-xs text-gray-400">
-            {visible.length} din {visible.length + (hasMore ? "+" : "")} produse
+            {visible.length} din {totalFiltered} produse
           </p>
         </div>
       )}
