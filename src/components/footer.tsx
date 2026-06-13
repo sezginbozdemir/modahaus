@@ -93,7 +93,7 @@ export function Footer() {
   }, [doc]);
 
   return (
-    <footer className="bg-black text-white mt-16 border-t border-white/10">
+    <footer className="bg-black text-white mt-6 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}

@@ -3,7 +3,7 @@ export const CONFIG = {
   whatsappNumber: "40745460352",
   storeName: "MODAHAUS",
   tagline: "Catalog",
-  initialLoad: 16,
+  initialLoad: 20,
   loadMoreCount: 12,
   companyLegalName: "SC ERCONF SRL",
   companyCUI: "RO9638399",
