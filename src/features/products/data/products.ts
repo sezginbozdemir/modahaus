@@ -18,19 +18,6 @@ export interface Product {
   extraImages: string[];
 }
 
-export type SortKey = "code-asc" | "code-desc" | "price-asc" | "price-desc";
-
-export function sortProducts(list: Product[], key: SortKey): Product[] {
-  return [...list].sort((a, b) => {
-    switch (key) {
-      case "code-asc":  return a.id.localeCompare(b.id);
-      case "code-desc": return b.id.localeCompare(a.id);
-      case "price-asc": return a.unitPrice - b.unitPrice;
-      case "price-desc": return b.unitPrice - a.unitPrice;
-    }
-  });
-}
-
 export const BRANDS: string[] = ["Cavallione","DEPOMODA","EVA","FAF","HAPPY PINK","HEPYEK","KAROL","Kentachvi","LOVE ME","MIELE","NYC","Noventa","ONDI","Powermix","Rock Jeans","TWN","The Bark"];
 export const SIZES: string[] = ["26","27","28","29","30","31","32","33","34","35","36","38","40","42","44","46","48","50","52","54","l","L","m","M","s","S","xl","XL","xs"];
 export const COLORS: string[] = ["Alb","Albastru","Albastru denim","Albastru deschis","Albastru inchis","Albastru mediu","Albastru închis","Animal print","Gri","Gri antracit","Negru","Negru spălăcit","Roșu","Verde"];

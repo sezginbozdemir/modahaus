@@ -48,7 +48,6 @@ export function ProductCardImage({
               -{discountPct ?? ""}
               {discountPct ? "%" : ""}
             </span>
-            <span className="opacity-90">Reducere</span>
           </span>
         </div>
       )}

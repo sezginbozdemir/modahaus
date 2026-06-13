@@ -7,146 +7,113 @@ import {
   FaMoneyBillWave,
 } from "react-icons/fa6";
 
-function Perk({
-  icon,
-  title,
-  subtitle,
-}: {
-  icon: React.ReactNode;
-  title: string;
-  subtitle: string;
-}) {
+function TrustItem({ icon, label }: { icon: React.ReactNode; label: string }) {
   return (
-    <div className="flex items-center gap-3 text-gray-200">
-      <div className="text-white/90">{icon}</div>
-      <div className="leading-tight">
-        <div className="text-[11px] font-semibold tracking-wide uppercase">
-          {title}
-        </div>
-        <div className="text-[11px] text-gray-300">{subtitle}</div>
-      </div>
-    </div>
-  );
-}
-
-function MobileTrustBar() {
-  return (
-    <div className="sm:hidden bg-black text-gray-200 border-t border-white/10 shadow-[0_-8px_20px_rgba(0,0,0,0.35)]">
-      <div className="max-w-7xl mx-auto px-4 h-10 flex items-center justify-between text-[11px]">
-        <span className="inline-flex items-center gap-2">
-          <FaTruckFast className="text-white/80" />
-          Livrare 24–48h
-        </span>
-
-        <span className="text-white/20">•</span>
-
-        <span className="inline-flex items-center gap-2">
-          <FaArrowRotateLeft className="text-white/80" />
-          Retur 14 zile
-        </span>
-
-        <span className="text-white/20">•</span>
-
-        <span className="inline-flex items-center gap-2">
-          <FaMoneyBillWave className="text-white/80" />
-          Ramburs
-        </span>
-      </div>
-    </div>
+    <span className="inline-flex items-center gap-1.5 text-[11px] text-gray-400">
+      <span className="text-gray-500">{icon}</span>
+      {label}
+    </span>
   );
 }
 
 export function Header() {
   return (
     <header className="sticky top-0 z-50">
-      <div className="hidden sm:block bg-black text-gray-200 border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 h-9 flex items-center justify-between">
-          <div className="flex items-center gap-5 text-[11px]">
-            <span className="inline-flex items-center gap-2">
-              <FaTruckFast className="text-white/80" />
-              Livrare 24–48h
-            </span>
-            <span className="text-white/20">•</span>
-            <span className="inline-flex items-center gap-2">
-              <FaArrowRotateLeft className="text-white/80" />
-              Retur 14 zile
-            </span>
-            <span className="text-white/20">•</span>
-            <span className="inline-flex items-center gap-2">
-              <FaMoneyBillWave className="text-white/80" />
-              Plată ramburs
-            </span>
-            <span className="text-white/20">•</span>
-            <span className="inline-flex items-center gap-2">
-              <FaHeadset className="text-white/80" />
-              L–S 10:00–18:00
-            </span>
+      <div className="hidden sm:block bg-gray-950 border-b border-white/5">
+        <div className="max-w-7xl mx-auto px-4 h-8 flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <TrustItem
+              icon={<FaTruckFast size={11} />}
+              label="Livrare 24–48h"
+            />
+            <span className="text-white/10">·</span>
+            <TrustItem
+              icon={<FaArrowRotateLeft size={11} />}
+              label="Retur 14 zile"
+            />
+            <span className="text-white/10">·</span>
+            <TrustItem
+              icon={<FaMoneyBillWave size={11} />}
+              label="Plată ramburs"
+            />
+            <span className="text-white/10">·</span>
+            <TrustItem icon={<FaHeadset size={11} />} label="L–S 10:00–18:00" />
           </div>
-
           <a
             href={buildWhatsAppGeneralLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-auto inline-flex items-center gap-2 text-[11px] text-gray-200 hover:text-white"
+            className="inline-flex items-center gap-1.5 text-[11px] text-gray-400 hover:text-white transition-colors"
           >
-            <FaWhatsapp className="text-green-400" />
-            <span>Suport pe WhatsApp</span>
+            <FaWhatsapp className="text-green-500" size={11} />
+            Suport WhatsApp
           </a>
         </div>
       </div>
 
-      {/* Main header */}
-      <div className="bg-black text-white border-b border-white/10 shadow-lg">
+      {/* Main bar */}
+      <div className="bg-white border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between gap-4">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <div className="font-heading font-black text-lg tracking-wide leading-tight">
-              {CONFIG.storeName}
-            </div>
-            <div className="text-green-400 text-[10px] font-semibold tracking-widest uppercase -mt-0.5">
-              {CONFIG.tagline}
-            </div>
+            <picture>
+              <source media="(min-width: 640px)" srcSet="/mh-m.png" />
+              <img
+                src="/mh-s.png"
+                alt={CONFIG.storeName}
+                className="h-12 w-auto object-contain"
+              />
+            </picture>
           </div>
 
-          {/* Perks (desktop only) — bigger spacing */}
-          <nav className="hidden lg:flex items-center gap-14">
-            <Perk
-              icon={<FaHeadset size={18} />}
-              title="Suport rapid"
-              subtitle="Răspundem repede"
-            />
-            <Perk
-              icon={<FaArrowRotateLeft size={18} />}
-              title="Retur simplu"
-              subtitle="Fără bătăi de cap"
-            />
-            <Perk
-              icon={<FaMoneyBillWave size={18} />}
-              title="Ramburs"
-              subtitle="Plătești la livrare"
-            />
-          </nav>
+          {/* Trust pills — desktop only */}
+          <div className="hidden lg:flex items-center gap-2">
+            {[
+              { icon: <FaTruckFast size={13} />, label: "Livrare rapidă" },
+              { icon: <FaArrowRotateLeft size={13} />, label: "Retur 14 zile" },
+              { icon: <FaMoneyBillWave size={13} />, label: "Plată ramburs" },
+              { icon: <FaHeadset size={13} />, label: "Suport rapid" },
+            ].map(({ icon, label }) => (
+              <span
+                key={label}
+                className="inline-flex items-center gap-1.5 text-[12px] text-gray-500 bg-gray-50 border border-gray-100 rounded-full px-3 py-1"
+              >
+                <span className="text-gray-400">{icon}</span>
+                {label}
+              </span>
+            ))}
+          </div>
 
           {/* CTA */}
           <a
             href={buildWhatsAppGeneralLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-shrink-0 inline-flex items-center gap-2 rounded-md
-                       bg-green-600 hover:bg-green-500
-                       px-3 sm:px-4 py-2 text-xs sm:text-sm
-                       font-semibold tracking-wide uppercase transition-colors"
+            className="flex-shrink-0 inline-flex items-center gap-2 rounded-full
+                       bg-[#25D366] hover:bg-[#1ebe5d] active:bg-[#18a852]
+                       px-4 py-2 text-white text-xs font-semibold tracking-wide
+                       transition-colors shadow-sm"
           >
-            <FaWhatsapp size={16} />
+            <FaWhatsapp size={15} />
             <span className="hidden sm:inline">Contact WhatsApp</span>
             <span className="sm:hidden">WhatsApp</span>
           </a>
         </div>
-
-        <div className="sm:hidden h-1 shadow-[0_10px_18px_rgba(0,0,0,0.35)]" />
       </div>
 
-      <MobileTrustBar />
+      {/* Mobile trust bar */}
+      <div className="sm:hidden bg-gray-950 border-b border-white/5">
+        <div className="max-w-7xl mx-auto px-4 h-9 flex items-center justify-between">
+          <TrustItem icon={<FaTruckFast size={11} />} label="Livrare 24–48h" />
+          <span className="text-white/10">·</span>
+          <TrustItem
+            icon={<FaArrowRotateLeft size={11} />}
+            label="Retur 14 zile"
+          />
+          <span className="text-white/10">·</span>
+          <TrustItem icon={<FaMoneyBillWave size={11} />} label="Ramburs" />
+        </div>
+      </div>
     </header>
   );
 }

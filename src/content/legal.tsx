@@ -1,6 +1,5 @@
-// src/content/legalContent.tsx
 import React from "react";
-import { CONFIG } from "../../config";
+import { CONFIG } from "../config";
 
 export type LegalDocKey =
   | "terms"

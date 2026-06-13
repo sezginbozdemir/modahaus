@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { CONFIG, buildWhatsAppGeneralLink } from "../config";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
-import { LEGAL_DOCS, LegalDocKey } from "./content/legal"; // adjust path if needed
+import { LEGAL_DOCS, LegalDocKey } from "../content/legal";
 import { InfoModal } from "./info-modal";
 
 function FooterTitle({ children }: { children: React.ReactNode }) {

@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from "react";
 import { Product } from "../../data/products";
 import { ProductCardImage } from "./product-card-image";
 import { ProductCardInfo } from "./product-card-info";
-import { ProductModal } from "./product-modal";
+import { ProductModal } from "../product-modal/product-modal";
 
 interface ProductCardProps {
   product: Product;
