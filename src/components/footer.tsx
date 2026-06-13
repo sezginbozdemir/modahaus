@@ -225,19 +225,6 @@ export function Footer() {
       >
         {modal?.body}
       </InfoModal>
-
-      {/* Floating WhatsApp button */}
-      <a
-        href={buildWhatsAppGeneralLink()}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-40 bg-green-500 hover:bg-green-400
-                   text-white rounded-full w-14 h-14 flex items-center justify-center
-                   shadow-xl hover:shadow-green-500/30 hover:scale-110 transition-all duration-200"
-        aria-label="Contactează-ne pe WhatsApp"
-      >
-        <FaWhatsapp size={26} />
-      </a>
     </footer>
   );
 }

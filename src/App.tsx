@@ -3,6 +3,7 @@ import { HeroBanner } from "./components/hero-banner";
 import { FilterBar } from "./features/filters/components/filter-bar";
 import { Footer } from "./components/footer";
 import { ProductGrid } from "./features/products/components/product-grid/product-grid";
+import { FloatingActions } from "./components/floating-actions";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <ProductGrid />
       </main>
       <Footer />
+      <FloatingActions />
     </div>
   );
 }
