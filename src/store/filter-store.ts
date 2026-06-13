@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { SortKey } from "../features/products/data/products";
+import { SortKey } from "../features/products/hooks/useProductCatalog";
 
 interface FilterState {
   brand: string[];
