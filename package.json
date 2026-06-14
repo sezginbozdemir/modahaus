@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "generate-products": "node generate-products.mjs",
+    "build": "npm run generate-products && tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

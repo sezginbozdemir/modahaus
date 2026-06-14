@@ -128,9 +128,9 @@ export function FilterDrawer({
         activeCount={sizes.length}
       >
         <OptionList
-          options={SIZES}
-          selected={sizes}
-          onPick={toggleSize}
+          options={[...new Set(SIZES.map((s) => s.toUpperCase()))]}
+          selected={sizes.map((s) => s.toUpperCase())}
+          onPick={(size) => toggleSize(size.toUpperCase())}
           onClear={clearSizes}
         />
       </AccordionSection>

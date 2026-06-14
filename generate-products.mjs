@@ -136,9 +136,38 @@ for (const brand of brands) {
 
 // Convert sets to sorted, cleaned arrays
 const uniqueBrands = [...explicitBrands].filter(Boolean).sort();
+const SIZE_ORDER = [
+  "XS",
+  "S",
+  "M",
+  "L",
+  "XL",
+  "XXL",
+  "2XL",
+  "3XL",
+  "4XL",
+  "5XL",
+];
+
 const uniqueSizes = [...allSizes].filter(Boolean).sort((a, b) => {
-  // Sort numbers numerically if possible, otherwise alphabetically
-  return !isNaN(a) && !isNaN(b) ? Number(a) - Number(b) : a.localeCompare(b);
+  const aIsNum = !isNaN(a);
+  const bIsNum = !isNaN(b);
+
+  // Both numeric → sort numerically
+  if (aIsNum && bIsNum) return Number(a) - Number(b);
+
+  // Both alphabetic → use custom order, fall back to localeCompare
+  if (!aIsNum && !bIsNum) {
+    const aIdx = SIZE_ORDER.indexOf(a.toUpperCase());
+    const bIdx = SIZE_ORDER.indexOf(b.toUpperCase());
+    if (aIdx !== -1 && bIdx !== -1) return aIdx - bIdx;
+    if (aIdx !== -1) return -1; // a is known, b is not → a first
+    if (bIdx !== -1) return 1; // b is known, a is not → b first
+    return a.localeCompare(b); // neither known → alphabetical
+  }
+
+  // Mixed: put numeric sizes before alphabetic (or swap if you prefer)
+  return aIsNum ? -1 : 1;
 });
 const uniqueColors = [...allColors].filter(Boolean).sort();
 const uniqueTypes = [...allTypes].filter(Boolean).sort();

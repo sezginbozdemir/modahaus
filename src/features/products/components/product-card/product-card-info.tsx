@@ -15,9 +15,12 @@ export function ProductCardInfo({
 }) {
   const sizesPreview =
     product.sizeList?.length > 0
-      ? product.sizeList.slice(0, 3).join(", ") +
-        (product.sizeList.length > 3 ? `+${product.sizeList.length - 3}` : "")
-      : product.sizes;
+      ? product.sizeList
+          .slice(0, 3)
+          .map((s) => s.toUpperCase())
+          .join(", ") +
+        (product.sizeList.length > 3 ? ` +${product.sizeList.length - 3}` : "")
+      : product.sizes.toUpperCase();
 
   return (
     <div className="p-4 flex flex-col gap-2 flex-1">

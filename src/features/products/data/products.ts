@@ -18,8 +18,8 @@ export interface Product {
   extraImages: string[];
 }
 
-export const BRANDS: string[] = ["Cavallione","DEPOMODA","EVA","FAF","HAPPY PINK","HEPYEK","KAROL","Kentachvi","LOVE ME","MIELE","NYC","Noventa","ONDI","Powermix","Rock Jeans","TWN","The Bark"];
-export const SIZES: string[] = ["26","27","28","29","30","31","32","33","34","35","36","38","40","42","44","46","48","50","52","54","l","L","m","M","s","S","xl","XL","xs"];
+export const BRANDS: string[] = ["Cavallione","EVA","FAF","HAPPY PINK","HEPYEK","KAROL","Kentachvi","LOVE ME","MIELE","ModaHaus","NYC","Noventa","ONDI","Powermix","Rock Jeans","TWN","The Bark"];
+export const SIZES: string[] = ["26","27","28","29","30","31","32","33","34","35","36","38","40","42","44","46","48","50","52","54","xs","s","S","m","M","l","L","XL","xl"];
 export const COLORS: string[] = ["Alb","Albastru","Albastru denim","Albastru deschis","Albastru inchis","Albastru mediu","Albastru închis","Animal print","Gri","Gri antracit","Negru","Negru spălăcit","Roșu","Verde"];
 export const TYPES: string[] = ["Baggy fit","Flare fit","Flared / Evazați","Flared fit","Fustă","Fustă cargo","Fustă denim midi","Fustă-pantalon","Mom fit","Oversized fit","Pantaloni eleganți","Pantaloni scurți","Skinny fit","Slim fit","Straight fit","Wide leg"];
 
@@ -54,335 +54,6 @@ export const products: Product[] = [
       "/products/Cavallione/6001/cavallione-engros-6001-1.jpeg",
       "/products/Cavallione/6001/cavallione-engros-6001-3.jpeg"
     ]
-  },
-  {
-    "id": "00",
-    "brand": "DEPOMODA",
-    "title": "Pantaloni lejeri sport-casual cu buzunare din denim aplicate",
-    "description": "Pantaloni sport-casual confecționați dintr-un material moale și confortabil, cu o croială foarte lejeră de tip baggy / wide leg. Se remarcă prin talia elastică înaltă cu șnur și buzunarele laterale contrastante din denim albastru, fiind disponibili în culorile negru, alb și gri.",
-    "sizes": "s - l",
-    "sizeList": [
-      "s",
-      "m",
-      "l"
-    ],
-    "unitPrice": 98.9,
-    "salePrice": 68.9,
-    "color": "Negru",
-    "type": "Baggy fit",
-    "plusSize": false,
-    "stock": {
-      "s": 1,
-      "m": 1,
-      "l": 1
-    },
-    "image": "/products/DEPOMODA/00/depomoda-engros-00-1_MAIN.jpeg",
-    "extraImages": []
-  },
-  {
-    "id": "000",
-    "brand": "DEPOMODA",
-    "title": "Cămașă lungă din denim negru cu aplicație stea din strasuri",
-    "description": "Cămașă tip jachetă supradimensionată din denim negru, prezentând detalii decorative cu rupturi discrete și o aplicație strălucitoare în formă de stea din strasuri pe buzunarul frontal.",
-    "sizes": "s - l",
-    "sizeList": [
-      "s",
-      "m",
-      "l"
-    ],
-    "unitPrice": 129.9,
-    "salePrice": 84.5,
-    "color": "Negru",
-    "type": "Oversized fit",
-    "plusSize": false,
-    "stock": {
-      "s": 2,
-      "m": 2,
-      "l": 1
-    },
-    "image": "/products/DEPOMODA/000/depomoda-engros-000-2_MAIN.jpg",
-    "extraImages": [
-      "/products/DEPOMODA/000/depomoda-engros-000-1.jpg"
-    ]
-  },
-  {
-    "id": "00023",
-    "brand": "DEPOMODA",
-    "title": "Pantaloni sport-casual lejeri cu inserții din denim și dungi laterale",
-    "description": "Pantaloni lungi cu o croială foarte lejeră de tip baggy fit, ce îmbină un material sport de culoare verde cu inserții laterale din denim albastru spălat.",
-    "sizes": "34 - 42",
-    "sizeList": [
-      "34",
-      "36",
-      "38",
-      "40",
-      "42"
-    ],
-    "unitPrice": 189.9,
-    "salePrice": 129.9,
-    "color": "Verde",
-    "type": "Baggy fit",
-    "plusSize": false,
-    "stock": {
-      "34": 1,
-      "36": 2,
-      "38": 1,
-      "40": 1,
-      "42": 1
-    },
-    "image": "/products/DEPOMODA/00023/depomoda-engros-00023-1_MAIN.jpeg",
-    "extraImages": []
-  },
-  {
-    "id": "001",
-    "brand": "DEPOMODA",
-    "title": "Pantaloni scurți din denim evazați cu talie înaltă",
-    "description": "Pantaloni scurți tip fustă-pantalon confecționați din denim albastru, cu o croială foarte evazată și lejeră (flared fit).",
-    "sizes": "34 - 42",
-    "sizeList": [
-      "34",
-      "36",
-      "38",
-      "40",
-      "42"
-    ],
-    "unitPrice": 54.9,
-    "salePrice": null,
-    "color": "Albastru",
-    "type": "Flared fit",
-    "plusSize": false,
-    "stock": {
-      "34": 1,
-      "36": 1,
-      "38": 1,
-      "40": 1,
-      "42": 1
-    },
-    "image": "/products/DEPOMODA/001/depomoda-engros-001-1_MAIN.jpeg",
-    "extraImages": []
-  },
-  {
-    "id": "00GRJ",
-    "brand": "DEPOMODA",
-    "title": "Blugi lejeri din denim bleumarin cu dungi sportive laterale",
-    "description": "Blugi lungi cu o croială foarte lejeră de tip baggy fit, confecționați din denim albastru închis (bleumarin) cu un ușor efect spălat.",
-    "sizes": "34 - 40",
-    "sizeList": [
-      "34",
-      "36",
-      "38",
-      "40"
-    ],
-    "unitPrice": 198.9,
-    "salePrice": 98.9,
-    "color": "Albastru inchis",
-    "type": "Baggy fit",
-    "plusSize": false,
-    "stock": {
-      "34": 2,
-      "36": 4,
-      "38": 4,
-      "40": 2
-    },
-    "image": "/products/DEPOMODA/00GRJ/depomoda-engros-00-1_MAIN.jpeg",
-    "extraImages": [
-      "/products/DEPOMODA/00GRJ/depomoda-engros-00-2.jpeg"
-    ]
-  },
-  {
-    "id": "1114",
-    "brand": "DEPOMODA",
-    "title": "Pantaloni scurți de blugi Marlix cu margini franjurate",
-    "description": "O pereche de pantaloni scurți din denim într-o nuanță de albastru deschis cu efect prespălat, având o croială cu talie înaltă și margini inferioare franjurate, ideali pentru un look casual, tineresc și relaxat de vară.",
-    "sizes": "34 - 42",
-    "sizeList": [
-      "34",
-      "36",
-      "38",
-      "40",
-      "42"
-    ],
-    "unitPrice": 45.9,
-    "salePrice": null,
-    "color": "Albastru deschis",
-    "type": "Pantaloni scurți",
-    "plusSize": false,
-    "stock": {
-      "34": 1,
-      "36": 2,
-      "38": 2,
-      "40": 2,
-      "42": 1
-    },
-    "image": "/products/DEPOMODA/1114/depomoda-engros-1114-1_MAIN.jpeg",
-    "extraImages": []
-  },
-  {
-    "id": "1123",
-    "brand": "DEPOMODA",
-    "title": "Pantaloni scurți de blugi Marlix cu rupturi și franjuri",
-    "description": "O pereche de pantaloni scurți din denim albastru clasic, cu un design modern ce include rupturi proeminente pe partea din față, talie medie spre înaltă și margini inferioare franjurate, ideali pentru o ținută casual și îndrăzneață în sezonul cald.",
-    "sizes": "34 - 42",
-    "sizeList": [
-      "34",
-      "36",
-      "38",
-      "40",
-      "42"
-    ],
-    "unitPrice": 45.9,
-    "salePrice": null,
-    "color": "Albastru",
-    "type": "Pantaloni scurți",
-    "plusSize": false,
-    "stock": {
-      "34": 1,
-      "36": 2,
-      "38": 2,
-      "40": 1,
-      "42": 1
-    },
-    "image": "/products/DEPOMODA/1123/depomoda-engros-1123-1_MAIN.jpeg",
-    "extraImages": []
-  },
-  {
-    "id": "1835",
-    "brand": "DEPOMODA",
-    "title": "Fustă de blugi Happy Pink cu nasturi și rupturi",
-    "description": "O fustă scurtă din denim negru cu efect prespălat, caracterizată printr-o închidere frontală elegantă cu nasturi la vedere, talie înaltă, zgârieturi decorative și margini inferioare nefinisate cu franjuri, perfectă pentru un stil casual-urban plin de atitudine.",
-    "sizes": "S - XL",
-    "sizeList": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "unitPrice": 64.9,
-    "salePrice": null,
-    "color": "Negru",
-    "type": "Fustă",
-    "plusSize": false,
-    "stock": {
-      "S": 1,
-      "M": 2,
-      "L": 2,
-      "XL": 1
-    },
-    "image": "/products/DEPOMODA/1835/depomoda-engros-1835-1_MAIN.jpeg",
-    "extraImages": []
-  },
-  {
-    "id": "5271",
-    "brand": "DEPOMODA",
-    "title": "Fustă lungă de blugi Happy Pink cu șliț frontal",
-    "description": "O fustă midi sau lungă din denim albastru clasic, prevăzută cu talie înaltă, buzunare funcționale și un șliț adânc în partea din față ce oferă libertate de mișcare, fiind o piesă versatilă și modernă pentru ținute casual zilnice.",
-    "sizes": "S - XL",
-    "sizeList": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "unitPrice": 78.8,
-    "salePrice": null,
-    "color": "Albastru",
-    "type": "Fustă",
-    "plusSize": false,
-    "stock": {
-      "S": 1,
-      "M": 2,
-      "L": 1,
-      "XL": 1
-    },
-    "image": "/products/DEPOMODA/5271/depomoda-engros-5271-1_MAIN.jpeg",
-    "extraImages": []
-  },
-  {
-    "id": "5306",
-    "brand": "DEPOMODA",
-    "title": "Fustă lungă de blugi cu margini franjurate",
-    "description": "O fustă midi sau lungă din denim într-o nuanță deschisă de albastru, croită cu talie înaltă, buzunare clasice și o tăietură asimetrică la bază decorată cu franjuri bogate, ideală pentru un look casual, relaxat și în tendințe.",
-    "sizes": "S - XL",
-    "sizeList": [
-      "S",
-      "M",
-      "L",
-      "XL"
-    ],
-    "unitPrice": 78.8,
-    "salePrice": null,
-    "color": "Albastru deschis",
-    "type": "Fustă",
-    "plusSize": false,
-    "stock": {
-      "S": 1,
-      "M": 2,
-      "L": 2,
-      "XL": 1
-    },
-    "image": "/products/DEPOMODA/5306/depomoda-engros-5306-1_MAIN.jpeg",
-    "extraImages": []
-  },
-  {
-    "id": "5553",
-    "brand": "DEPOMODA",
-    "title": "Pantaloni eleganți roșii cu dungă",
-    "description": "O pereche de pantaloni eleganți de culoare roșu aprins, cu o croială clasică și dungă călcată pe lungime, ideali pentru ținute office, formale sau smart-casual sofisticate.",
-    "sizes": "xs - xl",
-    "sizeList": [
-      "xs",
-      "s",
-      "m",
-      "l",
-      "xl"
-    ],
-    "unitPrice": 64.5,
-    "salePrice": null,
-    "color": "Roșu",
-    "type": "Pantaloni eleganți",
-    "plusSize": false,
-    "stock": {
-      "xs": 1,
-      "s": 1,
-      "m": 1,
-      "l": 1,
-      "xl": 1
-    },
-    "image": "/products/DEPOMODA/5553/depomoda-engros-5553-1_MAIN.jpeg",
-    "extraImages": [
-      "/products/DEPOMODA/5553/depomoda-engros-5553-2.jpeg",
-      "/products/DEPOMODA/5553/depomoda-engros-5553-3.jpeg",
-      "/products/DEPOMODA/5553/depomoda-engros-5553-4.jpeg",
-      "/products/DEPOMODA/5553/depomoda-engros-5553-5.jpeg"
-    ]
-  },
-  {
-    "id": "7430",
-    "brand": "DEPOMODA",
-    "title": "Fustă-pantalon de blugi Eva cu aplicații strălucitoare",
-    "description": "O fustă-pantalon modernă din denim albastru, cu un design petrecut asimetric în partea din față și închidere cu nasturi dubli, decorată pe întreaga suprafață cu aplicații strălucitoare tip strasuri, perfectă pentru un look casual-chic plin de personalitate.",
-    "sizes": "34 - 42",
-    "sizeList": [
-      "34",
-      "36",
-      "38",
-      "40",
-      "42"
-    ],
-    "unitPrice": 89.9,
-    "salePrice": 68.5,
-    "color": "Albastru",
-    "type": "Fustă-pantalon",
-    "plusSize": false,
-    "stock": {
-      "34": 1,
-      "36": 2,
-      "38": 1,
-      "40": 1,
-      "42": 1
-    },
-    "image": "/products/DEPOMODA/7430/depomoda-engros-7430-1_MAIN.jpeg",
-    "extraImages": []
   },
   {
     "id": "4593",
@@ -2167,6 +1838,335 @@ export const products: Product[] = [
     ]
   },
   {
+    "id": "00",
+    "brand": "ModaHaus",
+    "title": "Pantaloni lejeri sport-casual cu buzunare din denim aplicate",
+    "description": "Pantaloni sport-casual confecționați dintr-un material moale și confortabil, cu o croială foarte lejeră de tip baggy / wide leg. Se remarcă prin talia elastică înaltă cu șnur și buzunarele laterale contrastante din denim albastru, fiind disponibili în culorile negru, alb și gri.",
+    "sizes": "s - l",
+    "sizeList": [
+      "s",
+      "m",
+      "l"
+    ],
+    "unitPrice": 98.9,
+    "salePrice": 68.9,
+    "color": "Negru",
+    "type": "Baggy fit",
+    "plusSize": false,
+    "stock": {
+      "s": 1,
+      "m": 1,
+      "l": 1
+    },
+    "image": "/products/MODAHAUS/00/depomoda-engros-00-1_MAIN.jpeg",
+    "extraImages": []
+  },
+  {
+    "id": "000",
+    "brand": "ModaHaus",
+    "title": "Cămașă lungă din denim negru cu aplicație stea din strasuri",
+    "description": "Cămașă tip jachetă supradimensionată din denim negru, prezentând detalii decorative cu rupturi discrete și o aplicație strălucitoare în formă de stea din strasuri pe buzunarul frontal.",
+    "sizes": "s - l",
+    "sizeList": [
+      "s",
+      "m",
+      "l"
+    ],
+    "unitPrice": 129.9,
+    "salePrice": 84.5,
+    "color": "Negru",
+    "type": "Oversized fit",
+    "plusSize": false,
+    "stock": {
+      "s": 2,
+      "m": 2,
+      "l": 1
+    },
+    "image": "/products/MODAHAUS/000/depomoda-engros-000-2_MAIN.jpg",
+    "extraImages": [
+      "/products/MODAHAUS/000/depomoda-engros-000-1.jpg"
+    ]
+  },
+  {
+    "id": "00023",
+    "brand": "ModaHaus",
+    "title": "Pantaloni sport-casual lejeri cu inserții din denim și dungi laterale",
+    "description": "Pantaloni lungi cu o croială foarte lejeră de tip baggy fit, ce îmbină un material sport de culoare verde cu inserții laterale din denim albastru spălat.",
+    "sizes": "34 - 42",
+    "sizeList": [
+      "34",
+      "36",
+      "38",
+      "40",
+      "42"
+    ],
+    "unitPrice": 189.9,
+    "salePrice": 129.9,
+    "color": "Verde",
+    "type": "Baggy fit",
+    "plusSize": false,
+    "stock": {
+      "34": 1,
+      "36": 2,
+      "38": 1,
+      "40": 1,
+      "42": 1
+    },
+    "image": "/products/MODAHAUS/00023/depomoda-engros-00023-1_MAIN.jpeg",
+    "extraImages": []
+  },
+  {
+    "id": "001",
+    "brand": "ModaHaus",
+    "title": "Pantaloni scurți din denim evazați cu talie înaltă",
+    "description": "Pantaloni scurți tip fustă-pantalon confecționați din denim albastru, cu o croială foarte evazată și lejeră (flared fit).",
+    "sizes": "34 - 42",
+    "sizeList": [
+      "34",
+      "36",
+      "38",
+      "40",
+      "42"
+    ],
+    "unitPrice": 54.9,
+    "salePrice": null,
+    "color": "Albastru",
+    "type": "Flared fit",
+    "plusSize": false,
+    "stock": {
+      "34": 1,
+      "36": 1,
+      "38": 1,
+      "40": 1,
+      "42": 1
+    },
+    "image": "/products/MODAHAUS/001/depomoda-engros-001-1_MAIN.jpeg",
+    "extraImages": []
+  },
+  {
+    "id": "00GRJ",
+    "brand": "ModaHaus",
+    "title": "Blugi lejeri din denim bleumarin cu dungi sportive laterale",
+    "description": "Blugi lungi cu o croială foarte lejeră de tip baggy fit, confecționați din denim albastru închis (bleumarin) cu un ușor efect spălat.",
+    "sizes": "34 - 40",
+    "sizeList": [
+      "34",
+      "36",
+      "38",
+      "40"
+    ],
+    "unitPrice": 198.9,
+    "salePrice": 98.9,
+    "color": "Albastru inchis",
+    "type": "Baggy fit",
+    "plusSize": false,
+    "stock": {
+      "34": 2,
+      "36": 4,
+      "38": 4,
+      "40": 2
+    },
+    "image": "/products/MODAHAUS/00GRJ/depomoda-engros-00-1_MAIN.jpeg",
+    "extraImages": [
+      "/products/MODAHAUS/00GRJ/depomoda-engros-00-2.jpeg"
+    ]
+  },
+  {
+    "id": "1114",
+    "brand": "ModaHaus",
+    "title": "Pantaloni scurți de blugi Marlix cu margini franjurate",
+    "description": "O pereche de pantaloni scurți din denim într-o nuanță de albastru deschis cu efect prespălat, având o croială cu talie înaltă și margini inferioare franjurate, ideali pentru un look casual, tineresc și relaxat de vară.",
+    "sizes": "34 - 42",
+    "sizeList": [
+      "34",
+      "36",
+      "38",
+      "40",
+      "42"
+    ],
+    "unitPrice": 45.9,
+    "salePrice": null,
+    "color": "Albastru deschis",
+    "type": "Pantaloni scurți",
+    "plusSize": false,
+    "stock": {
+      "34": 1,
+      "36": 2,
+      "38": 2,
+      "40": 2,
+      "42": 1
+    },
+    "image": "/products/MODAHAUS/1114/depomoda-engros-1114-1_MAIN.jpeg",
+    "extraImages": []
+  },
+  {
+    "id": "1123",
+    "brand": "ModaHaus",
+    "title": "Pantaloni scurți de blugi Marlix cu rupturi și franjuri",
+    "description": "O pereche de pantaloni scurți din denim albastru clasic, cu un design modern ce include rupturi proeminente pe partea din față, talie medie spre înaltă și margini inferioare franjurate, ideali pentru o ținută casual și îndrăzneață în sezonul cald.",
+    "sizes": "34 - 42",
+    "sizeList": [
+      "34",
+      "36",
+      "38",
+      "40",
+      "42"
+    ],
+    "unitPrice": 45.9,
+    "salePrice": null,
+    "color": "Albastru",
+    "type": "Pantaloni scurți",
+    "plusSize": false,
+    "stock": {
+      "34": 1,
+      "36": 2,
+      "38": 2,
+      "40": 1,
+      "42": 1
+    },
+    "image": "/products/MODAHAUS/1123/depomoda-engros-1123-1_MAIN.jpeg",
+    "extraImages": []
+  },
+  {
+    "id": "1835",
+    "brand": "ModaHaus",
+    "title": "Fustă de blugi Happy Pink cu nasturi și rupturi",
+    "description": "O fustă scurtă din denim negru cu efect prespălat, caracterizată printr-o închidere frontală elegantă cu nasturi la vedere, talie înaltă, zgârieturi decorative și margini inferioare nefinisate cu franjuri, perfectă pentru un stil casual-urban plin de atitudine.",
+    "sizes": "S - XL",
+    "sizeList": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "unitPrice": 64.9,
+    "salePrice": null,
+    "color": "Negru",
+    "type": "Fustă",
+    "plusSize": false,
+    "stock": {
+      "S": 1,
+      "M": 2,
+      "L": 2,
+      "XL": 1
+    },
+    "image": "/products/MODAHAUS/1835/depomoda-engros-1835-1_MAIN.jpeg",
+    "extraImages": []
+  },
+  {
+    "id": "5271",
+    "brand": "ModaHaus",
+    "title": "Fustă lungă de blugi Happy Pink cu șliț frontal",
+    "description": "O fustă midi sau lungă din denim albastru clasic, prevăzută cu talie înaltă, buzunare funcționale și un șliț adânc în partea din față ce oferă libertate de mișcare, fiind o piesă versatilă și modernă pentru ținute casual zilnice.",
+    "sizes": "S - XL",
+    "sizeList": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "unitPrice": 78.8,
+    "salePrice": null,
+    "color": "Albastru",
+    "type": "Fustă",
+    "plusSize": false,
+    "stock": {
+      "S": 1,
+      "M": 2,
+      "L": 1,
+      "XL": 1
+    },
+    "image": "/products/MODAHAUS/5271/depomoda-engros-5271-1_MAIN.jpeg",
+    "extraImages": []
+  },
+  {
+    "id": "5306",
+    "brand": "ModaHaus",
+    "title": "Fustă lungă de blugi cu margini franjurate",
+    "description": "O fustă midi sau lungă din denim într-o nuanță deschisă de albastru, croită cu talie înaltă, buzunare clasice și o tăietură asimetrică la bază decorată cu franjuri bogate, ideală pentru un look casual, relaxat și în tendințe.",
+    "sizes": "S - XL",
+    "sizeList": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "unitPrice": 78.8,
+    "salePrice": null,
+    "color": "Albastru deschis",
+    "type": "Fustă",
+    "plusSize": false,
+    "stock": {
+      "S": 1,
+      "M": 2,
+      "L": 2,
+      "XL": 1
+    },
+    "image": "/products/MODAHAUS/5306/depomoda-engros-5306-1_MAIN.jpeg",
+    "extraImages": []
+  },
+  {
+    "id": "5553",
+    "brand": "ModaHaus",
+    "title": "Pantaloni eleganți roșii cu dungă",
+    "description": "O pereche de pantaloni eleganți de culoare roșu aprins, cu o croială clasică și dungă călcată pe lungime, ideali pentru ținute office, formale sau smart-casual sofisticate.",
+    "sizes": "xs - xl",
+    "sizeList": [
+      "xs",
+      "s",
+      "m",
+      "l",
+      "xl"
+    ],
+    "unitPrice": 64.5,
+    "salePrice": null,
+    "color": "Roșu",
+    "type": "Pantaloni eleganți",
+    "plusSize": false,
+    "stock": {
+      "xs": 1,
+      "s": 1,
+      "m": 1,
+      "l": 1,
+      "xl": 1
+    },
+    "image": "/products/MODAHAUS/5553/depomoda-engros-5553-1_MAIN.jpeg",
+    "extraImages": [
+      "/products/MODAHAUS/5553/depomoda-engros-5553-2.jpeg",
+      "/products/MODAHAUS/5553/depomoda-engros-5553-3.jpeg",
+      "/products/MODAHAUS/5553/depomoda-engros-5553-4.jpeg",
+      "/products/MODAHAUS/5553/depomoda-engros-5553-5.jpeg"
+    ]
+  },
+  {
+    "id": "7430",
+    "brand": "ModaHaus",
+    "title": "Fustă-pantalon de blugi Eva cu aplicații strălucitoare",
+    "description": "O fustă-pantalon modernă din denim albastru, cu un design petrecut asimetric în partea din față și închidere cu nasturi dubli, decorată pe întreaga suprafață cu aplicații strălucitoare tip strasuri, perfectă pentru un look casual-chic plin de personalitate.",
+    "sizes": "34 - 42",
+    "sizeList": [
+      "34",
+      "36",
+      "38",
+      "40",
+      "42"
+    ],
+    "unitPrice": 89.9,
+    "salePrice": 68.5,
+    "color": "Albastru",
+    "type": "Fustă-pantalon",
+    "plusSize": false,
+    "stock": {
+      "34": 1,
+      "36": 2,
+      "38": 1,
+      "40": 1,
+      "42": 1
+    },
+    "image": "/products/MODAHAUS/7430/depomoda-engros-7430-1_MAIN.jpeg",
+    "extraImages": []
+  },
+  {
     "id": "1069",
     "brand": "NYC",
     "title": "Blugi slim fit NYC albastru închis cu talie înaltă",
@@ -2657,8 +2657,8 @@ export const products: Product[] = [
       "50",
       "52"
     ],
-    "unitPrice": 40,
-    "salePrice": 98.9,
+    "unitPrice": 98.9,
+    "salePrice": null,
     "color": "Albastru",
     "type": "Mom fit",
     "plusSize": true,
@@ -2829,7 +2829,7 @@ export const products: Product[] = [
     "id": "1006",
     "brand": "Powermix",
     "title": "Blugi skinny Powermix cu zgârieturi fine",
-    "description": "Pantaloni realizați din denim albastru închis cu ușoare nuanțe prespălate, prezentați în imaginea powermix-engros-1006-1_MAIN.jpeg. Modelul dispune de o croială skinny mulată, talie înaltă și mici detalii uzate sub formă de zgârieturi fine pe picioare, având o structură elastică și buzunare clasice.",
+    "description": "Pantaloni realizați din denim albastru închis cu ușoare nuanțe prespălate. Modelul dispune de o croială skinny mulată, talie înaltă și mici detalii uzate sub formă de zgârieturi fine pe picioare, având o structură elastică și buzunare clasice.",
     "sizes": "26 - 31",
     "sizeList": [
       "26",
@@ -2859,7 +2859,7 @@ export const products: Product[] = [
     "id": "1044",
     "brand": "Powermix",
     "title": "Blugi skinny Powermix cu mici rupturi decorative",
-    "description": "Pantaloni confecționați din denim albastru închis intens, evidențiați în imaginea powermix-engros-1044-1_MAIN.jpeg. Modelul are o croială skinny, talie înaltă și buzunare clasice, fiind prevăzut cu zgârieturi fine și mici rupturi decorative pe picioare dintr-un material flexibil și elastic.",
+    "description": "Pantaloni confecționați din denim albastru închis intens. Modelul are o croială skinny, talie înaltă și buzunare clasice, fiind prevăzut cu zgârieturi fine și mici rupturi decorative pe picioare dintr-un material flexibil și elastic.",
     "sizes": "26 - 31",
     "sizeList": [
       "26",
@@ -2889,7 +2889,7 @@ export const products: Product[] = [
     "id": "1071",
     "brand": "Powermix",
     "title": "Blugi drepti Powermix cu zgârieturi fine",
-    "description": "Pantaloni confecționați din denim albastru cu un aspect ușor prespălat în zona coapselor, evidențiați în imaginea powermix-engros-1071-2.jpeg. Piesa prezintă o croială dreaptă, talie înaltă, buzunare clasice și este decorată cu zgârieturi fine și discrete pe picioare, fiind realizată dintr-un material flexibil.",
+    "description": "Pantaloni confecționați din denim albastru cu un aspect ușor prespălat în zona coapselor. Piesa prezintă o croială dreaptă, talie înaltă, buzunare clasice și este decorată cu zgârieturi fine și discrete pe picioare, fiind realizată dintr-un material flexibil.",
     "sizes": "26 - 31",
     "sizeList": [
       "26",
@@ -2982,7 +2982,7 @@ export const products: Product[] = [
     "id": "6001",
     "brand": "Powermix",
     "title": "Blugi skinny Powermix cu strasuri și rupturi",
-    "description": "Pantaloni confecționați din denim albastru deschis prespălat, prezentați în imaginea powermix-engros-6001-1_MAIN.jpeg. Modelul se remarcă printr-o bandă lată decorată cu strasuri strălucitoare în zona taliei înalte, având o croială skinny, rupturi decorative texturate pe picioare și mici detalii uzate la tiv.",
+    "description": "Pantaloni confecționați din denim albastru deschis prespălat. Modelul se remarcă printr-o bandă lată decorată cu strasuri strălucitoare în zona taliei înalte, având o croială skinny, rupturi decorative texturate pe picioare și mici detalii uzate la tiv.",
     "sizes": "26 - 31",
     "sizeList": [
       "26",

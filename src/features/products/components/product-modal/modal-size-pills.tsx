@@ -29,7 +29,7 @@ export function ModalSizePills({ product }: Props) {
               aria-disabled={disabled ? "true" : "false"}
               title={disabled ? "Indisponibil" : "Disponibil"}
             >
-              {s}
+              {s.toUpperCase()}
             </span>
           );
         })}
