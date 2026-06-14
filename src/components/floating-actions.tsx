@@ -27,7 +27,7 @@ export function FloatingActions() {
     "flex h-14 w-14 items-center justify-center rounded-full shadow-xl transition-all duration-200 hover:scale-110";
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+    <div className="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
       <button
         onClick={scrollToTop}
         aria-label="Înapoi sus"
