@@ -16,8 +16,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=DM+Sans:wght@400;500;600&display=swap"
-      rel="stylesheet"
+      rel="styleseeet"
     />
+    <!-- Google tag (gtag.js) -->
+    <script>
+      // Initialize dataLayer and gtag BEFORE loading the banner
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      // Set default consent state (denied) — Consent Mode v2
+      gtag("consent", "default", {
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+        analytics_storage: "denied",
+        functionality_storage: "denied",
+        personalization_storage: "denied",
+        security_storage: "granted", // always allowed
+        wait_for_update: 500, // ms to wait for consent update
+      });
+
+      gtag("js", new Date());
+    </script>
   </head>
   <body>
     <div id="root"></div>
