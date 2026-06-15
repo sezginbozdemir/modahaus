@@ -2,31 +2,61 @@
 <html lang="ro">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Modahaus</title>
+    <title>Modahaus - Blugi și articole fashion pentru femei</title>
 
     <meta
       name="description"
       content="Descoperă colecția Modahaus: blugi de calitate și articole fashion în tendințe. Livrare rapidă în toată România direct la tine acasă."
     />
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Modahaus" />
+    <meta
+      property="og:title"
+      content="Modahaus - Blugi și articole fashion pentru femei"
+    />
+    <meta
+      property="og:description"
+      content="Descoperă colecția Modahaus: blugi de calitate și articole fashion în tendințe. Livrare rapidă în toată România direct la tine acasă."
+    />
+    <meta property="og:url" content="https://modahaus.ro" />
+    <meta property="og:image" content="https://modahaus.ro/favicon.png" />
+    <meta property="og:locale" content="ro_RO" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Modahaus - Blugi și articole fashion pentru femei"
+    />
+    <meta
+      name="twitter:description"
+      content="Descoperă colecția Modahaus: blugi de calitate și articole fashion în tendințe. Livrare rapidă în toată România direct la tine acasă."
+    />
+    <meta name="twitter:image" content="https://modahaus.ro/favicon.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=DM+Sans:wght@400;500;600&display=swap"
-      rel="styleseeet"
+      rel="stylesheet"
     />
-    <!-- Google tag (gtag.js) -->
+
+    <!-- Google Consent Mode -->
     <script>
-      // Initialize dataLayer and gtag BEFORE loading the banner
       window.dataLayer = window.dataLayer || [];
+
       function gtag() {
         dataLayer.push(arguments);
       }
 
-      // Set default consent state (denied) — Consent Mode v2
       gtag("consent", "default", {
         ad_storage: "denied",
         ad_user_data: "denied",
@@ -34,15 +64,17 @@
         analytics_storage: "denied",
         functionality_storage: "denied",
         personalization_storage: "denied",
-        security_storage: "granted", // always allowed
-        wait_for_update: 500, // ms to wait for consent update
+        security_storage: "granted",
+        wait_for_update: 500,
       });
 
       gtag("js", new Date());
     </script>
   </head>
+
   <body>
     <div id="root"></div>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
