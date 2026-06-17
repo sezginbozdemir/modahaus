@@ -21,7 +21,7 @@ export interface Product {
 export const BRANDS: string[] = ["Cavallione","EVA","FAF","HAPPY PINK","HEPYEK","KAROL","Kentachvi","LOVE ME","MIELE","ModaHaus","NYC","Noventa","ONDI","Powermix","Rock Jeans","TWN","The Bark"];
 export const SIZES: string[] = ["26","27","28","29","30","31","32","33","34","35","36","38","40","42","44","46","48","50","52","54","xs","s","S","m","M","l","L","XL","xl"];
 export const COLORS: string[] = ["Alb","Albastru","Albastru denim","Albastru deschis","Albastru inchis","Albastru mediu","Albastru închis","Animal print","Gri","Gri antracit","Negru","Negru spălăcit","Roșu","Verde"];
-export const TYPES: string[] = ["Baggy fit","Flare fit","Flared / Evazați","Flared fit","Fustă","Fustă cargo","Fustă denim midi","Fustă-pantalon","Mom fit","Oversized fit","Pantaloni eleganți","Pantaloni scurți","Skinny fit","Slim fit","Straight fit","Wide leg"];
+export const TYPES: string[] = ["Baggy fit","Cămașă","Drepți","Evazați","Fustă","Mom fit","Pantaloni eleganți","Scurt","Skinny fit","Wide leg"];
 
 export const products: Product[] = [
   {
@@ -160,7 +160,7 @@ export const products: Product[] = [
     "unitPrice": 145.9,
     "salePrice": 85.9,
     "color": "Albastru deschis",
-    "type": "Fustă cargo",
+    "type": "Fustă",
     "plusSize": false,
     "stock": {
       "34": 1,
@@ -691,7 +691,7 @@ export const products: Product[] = [
     "unitPrice": 129.9,
     "salePrice": 89.9,
     "color": "Albastru deschis",
-    "type": "Flared / Evazați",
+    "type": "Evazați",
     "plusSize": false,
     "stock": {
       "26": 2,
@@ -721,7 +721,7 @@ export const products: Product[] = [
     "unitPrice": 149.9,
     "salePrice": 98.9,
     "color": "Albastru deschis",
-    "type": "Flared / Evazați",
+    "type": "Evazați",
     "plusSize": false,
     "stock": {
       "26": 2,
@@ -847,7 +847,7 @@ export const products: Product[] = [
     "unitPrice": 85.9,
     "salePrice": null,
     "color": "Albastru închis",
-    "type": "Flared / Evazați",
+    "type": "Evazați",
     "plusSize": false,
     "stock": {
       "26": 2,
@@ -909,7 +909,7 @@ export const products: Product[] = [
     "unitPrice": 68.9,
     "salePrice": null,
     "color": "Negru",
-    "type": "Flared / Evazați",
+    "type": "Evazați",
     "plusSize": false,
     "stock": {
       "26": 1,
@@ -939,7 +939,7 @@ export const products: Product[] = [
     "unitPrice": 68.9,
     "salePrice": null,
     "color": "Negru",
-    "type": "Flared / Evazați",
+    "type": "Evazați",
     "plusSize": false,
     "stock": {
       "26": 1,
@@ -970,7 +970,7 @@ export const products: Product[] = [
     "unitPrice": 68.9,
     "salePrice": null,
     "color": "Albastru închis",
-    "type": "Flared / Evazați",
+    "type": "Evazați",
     "plusSize": false,
     "stock": {
       "28": 3,
@@ -1094,7 +1094,7 @@ export const products: Product[] = [
     "unitPrice": 129.9,
     "salePrice": 98.9,
     "color": "Albastru",
-    "type": "Straight fit",
+    "type": "Drepți",
     "plusSize": false,
     "stock": {
       "36": 2,
@@ -1124,7 +1124,7 @@ export const products: Product[] = [
     "unitPrice": 98.9,
     "salePrice": null,
     "color": "Albastru",
-    "type": "Straight fit",
+    "type": "Drepți",
     "plusSize": true,
     "stock": {
       "42": 3,
@@ -1278,7 +1278,7 @@ export const products: Product[] = [
     "unitPrice": 98.9,
     "salePrice": null,
     "color": "Albastru",
-    "type": "Straight fit",
+    "type": "Drepți",
     "plusSize": true,
     "stock": {
       "42": 9,
@@ -1308,7 +1308,7 @@ export const products: Product[] = [
     "unitPrice": 98.9,
     "salePrice": null,
     "color": "Albastru închis",
-    "type": "Straight fit",
+    "type": "Drepți",
     "plusSize": false,
     "stock": {
       "42": 1,
@@ -1395,7 +1395,7 @@ export const products: Product[] = [
     "unitPrice": 69.9,
     "salePrice": null,
     "color": "Negru",
-    "type": "Straight fit",
+    "type": "Drepți",
     "plusSize": false,
     "stock": {
       "34": 10,
@@ -1455,7 +1455,7 @@ export const products: Product[] = [
     "unitPrice": 79.9,
     "salePrice": null,
     "color": "Negru",
-    "type": "Slim fit",
+    "type": "Skinny fit",
     "plusSize": false,
     "stock": {
       "34": 1,
@@ -1542,7 +1542,7 @@ export const products: Product[] = [
     "unitPrice": 89.9,
     "salePrice": null,
     "color": "Albastru deschis",
-    "type": "Flare fit",
+    "type": "Evazați",
     "plusSize": false,
     "stock": {
       "36": 2,
@@ -1605,7 +1605,7 @@ export const products: Product[] = [
     "unitPrice": 79.9,
     "salePrice": null,
     "color": "Negru",
-    "type": "Flare fit",
+    "type": "Evazați",
     "plusSize": false,
     "stock": {
       "36": 2,
@@ -1635,7 +1635,7 @@ export const products: Product[] = [
     "unitPrice": 89.9,
     "salePrice": null,
     "color": "Albastru",
-    "type": "Slim fit",
+    "type": "Skinny fit",
     "plusSize": true,
     "stock": {
       "40": 1,
@@ -1699,7 +1699,7 @@ export const products: Product[] = [
     "unitPrice": 58.9,
     "salePrice": null,
     "color": "Albastru deschis",
-    "type": "Pantaloni scurți",
+    "type": "Scurt",
     "plusSize": false,
     "stock": {
       "34": 3,
@@ -1730,7 +1730,7 @@ export const products: Product[] = [
     "unitPrice": 58.9,
     "salePrice": null,
     "color": "Albastru deschis",
-    "type": "Fustă-pantalon",
+    "type": "Scurt",
     "plusSize": false,
     "stock": {
       "34": 3,
@@ -1761,14 +1761,14 @@ export const products: Product[] = [
     "unitPrice": 58.9,
     "salePrice": null,
     "color": "Albastru",
-    "type": "Fustă-pantalon",
+    "type": "Scurt",
     "plusSize": false,
     "stock": {
-      "34": 2,
-      "36": 4,
-      "38": 4,
-      "40": 2,
-      "42": 2
+      "34": 1,
+      "36": 2,
+      "38": 2,
+      "40": 1,
+      "42": 1
     },
     "image": "/products/MIELE/642/miele-engros-642-3_MAIN.jpeg",
     "extraImages": [
@@ -1792,14 +1792,14 @@ export const products: Product[] = [
     "unitPrice": 58.9,
     "salePrice": null,
     "color": "Gri",
-    "type": "Fustă-pantalon",
+    "type": "Scurt",
     "plusSize": false,
     "stock": {
-      "34": 2,
-      "36": 4,
-      "38": 4,
-      "40": 2,
-      "42": 2
+      "34": 1,
+      "36": 2,
+      "38": 2,
+      "40": 1,
+      "42": 1
     },
     "image": "/products/MIELE/643/miele-engros-643-3_MAIN.png",
     "extraImages": [
@@ -1823,7 +1823,7 @@ export const products: Product[] = [
     "unitPrice": 58.9,
     "salePrice": null,
     "color": "Negru",
-    "type": "Fustă-pantalon",
+    "type": "Scurt",
     "plusSize": false,
     "stock": {
       "34": 1,
@@ -1875,7 +1875,7 @@ export const products: Product[] = [
     "unitPrice": 129.9,
     "salePrice": 84.5,
     "color": "Negru",
-    "type": "Oversized fit",
+    "type": "Cămașă",
     "plusSize": false,
     "stock": {
       "s": 2,
@@ -1931,7 +1931,7 @@ export const products: Product[] = [
     "unitPrice": 54.9,
     "salePrice": null,
     "color": "Albastru",
-    "type": "Flared fit",
+    "type": "Scurt",
     "plusSize": false,
     "stock": {
       "34": 1,
@@ -1987,7 +1987,7 @@ export const products: Product[] = [
     "unitPrice": 45.9,
     "salePrice": null,
     "color": "Albastru deschis",
-    "type": "Pantaloni scurți",
+    "type": "Scurt",
     "plusSize": false,
     "stock": {
       "34": 1,
@@ -2015,7 +2015,7 @@ export const products: Product[] = [
     "unitPrice": 45.9,
     "salePrice": null,
     "color": "Albastru",
-    "type": "Pantaloni scurți",
+    "type": "Scurt",
     "plusSize": false,
     "stock": {
       "34": 1,
@@ -2154,7 +2154,7 @@ export const products: Product[] = [
     "unitPrice": 89.9,
     "salePrice": 68.5,
     "color": "Albastru",
-    "type": "Fustă-pantalon",
+    "type": "Scurt",
     "plusSize": false,
     "stock": {
       "34": 1,
@@ -2184,7 +2184,7 @@ export const products: Product[] = [
     "unitPrice": 59.9,
     "salePrice": null,
     "color": "Albastru închis",
-    "type": "Slim fit",
+    "type": "Skinny fit",
     "plusSize": false,
     "stock": {
       "30": 1,
@@ -2318,7 +2318,7 @@ export const products: Product[] = [
     "unitPrice": 59.9,
     "salePrice": null,
     "color": "Albastru închis",
-    "type": "Straight fit",
+    "type": "Drepți",
     "plusSize": false,
     "stock": {
       "34": 4,
@@ -2380,7 +2380,7 @@ export const products: Product[] = [
     "unitPrice": 59.9,
     "salePrice": null,
     "color": "Albastru închis",
-    "type": "Flare fit",
+    "type": "Evazați",
     "plusSize": false,
     "stock": {
       "26": 1,
@@ -2413,7 +2413,7 @@ export const products: Product[] = [
     "unitPrice": 59.9,
     "salePrice": null,
     "color": "Albastru",
-    "type": "Slim fit",
+    "type": "Skinny fit",
     "plusSize": true,
     "stock": {
       "42": 6,
@@ -2569,7 +2569,7 @@ export const products: Product[] = [
     "unitPrice": 98.9,
     "salePrice": null,
     "color": "Albastru",
-    "type": "Flare fit",
+    "type": "Evazați",
     "plusSize": true,
     "stock": {
       "34": 2,
@@ -2902,7 +2902,7 @@ export const products: Product[] = [
     "unitPrice": 55.9,
     "salePrice": null,
     "color": "Albastru",
-    "type": "Straight fit",
+    "type": "Drepți",
     "plusSize": false,
     "stock": {
       "26": 2,
@@ -2965,7 +2965,7 @@ export const products: Product[] = [
     "unitPrice": 55.9,
     "salePrice": null,
     "color": "Albastru",
-    "type": "Straight fit",
+    "type": "Drepți",
     "plusSize": false,
     "stock": {
       "30": 3,
@@ -3056,7 +3056,7 @@ export const products: Product[] = [
     "unitPrice": 129.9,
     "salePrice": 99.9,
     "color": "Albastru închis",
-    "type": "Straight fit",
+    "type": "Drepți",
     "plusSize": false,
     "stock": {
       "34": 2,
@@ -3086,7 +3086,7 @@ export const products: Product[] = [
     "unitPrice": 129.9,
     "salePrice": 99.9,
     "color": "Albastru închis",
-    "type": "Straight fit",
+    "type": "Drepți",
     "plusSize": false,
     "stock": {
       "34": 1,
@@ -3116,7 +3116,7 @@ export const products: Product[] = [
     "unitPrice": 99.9,
     "salePrice": null,
     "color": "Albastru",
-    "type": "Straight fit",
+    "type": "Drepți",
     "plusSize": true,
     "stock": {
       "42": 4,
@@ -3146,7 +3146,7 @@ export const products: Product[] = [
     "unitPrice": 64.9,
     "salePrice": null,
     "color": "Albastru",
-    "type": "Fustă denim midi",
+    "type": "Fustă",
     "plusSize": false,
     "stock": {
       "34": 2,
@@ -3172,7 +3172,7 @@ export const products: Product[] = [
     "unitPrice": 64.9,
     "salePrice": null,
     "color": "Negru",
-    "type": "Fustă denim midi",
+    "type": "Fustă",
     "plusSize": false,
     "stock": {
       "34": 3,
