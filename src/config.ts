@@ -1,6 +1,6 @@
 export const CONFIG = {
   /** WhatsApp number in international format WITHOUT + or spaces, e.g. "40712345678" */
-  whatsappNumber: "40745460352",
+  whatsappNumber: "40742080453",
   storeName: "MODAHAUS",
   tagline: "Catalog",
   initialLoad: 20,
