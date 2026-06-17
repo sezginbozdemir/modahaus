@@ -19,7 +19,7 @@ export function buildWhatsAppLink(productId: string): string {
 
 export function buildWhatsAppGeneralLink(): string {
   const msg = encodeURIComponent(
-    "Bună ziua! Sunt interesat de produsele voastre en-gros.",
+    "Bună ziua! Sunt interesat de produsele voastre.",
   );
   return `https://wa.me/${CONFIG.whatsappNumber}?text=${msg}`;
 }
