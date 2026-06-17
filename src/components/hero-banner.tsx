@@ -1,7 +1,9 @@
+import { buildWhatsAppGeneralLink } from "../config";
+
 export function HeroBanner() {
   return (
     <a
-      href="https://wa.me/40745460352"
+      href={buildWhatsAppGeneralLink()}
       target="_blank"
       rel="noopener noreferrer"
     >
