@@ -20,8 +20,8 @@ export interface Product {
 
 export const BRANDS: string[] = ["Cavallione","EVA","FAF","HAPPY PINK","HEPYEK","KAROL","Kentachvi","LOVE ME","MIELE","ModaHaus","NYC","Noventa","ONDI","Powermix","Rock Jeans","TWN","The Bark"];
 export const SIZES: string[] = ["26","27","28","29","30","31","32","33","34","35","36","38","40","42","44","46","48","50","52","54","xs","s","S","m","M","l","L","XL","xl"];
-export const COLORS: string[] = ["Alb","Albastru","Albastru denim","Albastru deschis","Albastru inchis","Albastru mediu","Albastru închis","Animal print","Gri","Gri antracit","Negru","Negru spălăcit","Roșu","Verde"];
-export const TYPES: string[] = ["Baggy fit","Cămașă","Drepți","Evazați","Fustă","Mom fit","Pantaloni eleganți","Scurt","Skinny fit","Wide leg"];
+export const COLORS: string[] = ["Alb","Albastru","Albastru deschis","Albastru inchis","Albastru închis","Animal print","Gri","Negru","Roșu","Verde"];
+export const TYPES: string[] = ["Baggy fit","Cămașă","Drepți","Evazați","Fustă","Mom fit","Pantaloni eleganți","Pantaloni trening","Scurt","Skinny fit","Wide leg"];
 
 export const products: Product[] = [
   {
@@ -70,7 +70,7 @@ export const products: Product[] = [
     ],
     "unitPrice": 198.9,
     "salePrice": 135.9,
-    "color": "Albastru deschis",
+    "color": "Albastru",
     "type": "Wide leg",
     "plusSize": false,
     "stock": {
@@ -159,7 +159,7 @@ export const products: Product[] = [
     ],
     "unitPrice": 145.9,
     "salePrice": 85.9,
-    "color": "Albastru deschis",
+    "color": "Albastru",
     "type": "Fustă",
     "plusSize": false,
     "stock": {
@@ -211,7 +211,7 @@ export const products: Product[] = [
     ],
     "unitPrice": 145.9,
     "salePrice": 85.9,
-    "color": "Albastru deschis",
+    "color": "Albastru",
     "type": "Fustă",
     "plusSize": false,
     "stock": {
@@ -238,7 +238,7 @@ export const products: Product[] = [
     ],
     "unitPrice": 125.9,
     "salePrice": 98.9,
-    "color": "Albastru deschis",
+    "color": "Albastru",
     "type": "Wide leg",
     "plusSize": false,
     "stock": {
@@ -269,7 +269,7 @@ export const products: Product[] = [
     ],
     "unitPrice": 149.9,
     "salePrice": 98.9,
-    "color": "Albastru deschis",
+    "color": "Albastru",
     "type": "Mom fit",
     "plusSize": false,
     "stock": {
@@ -300,7 +300,7 @@ export const products: Product[] = [
     ],
     "unitPrice": 129.9,
     "salePrice": 89.5,
-    "color": "Albastru deschis",
+    "color": "Albastru",
     "type": "Mom fit",
     "plusSize": false,
     "stock": {
@@ -352,7 +352,7 @@ export const products: Product[] = [
   {
     "id": "3075",
     "brand": "HAPPY PINK",
-    "title": "Blugi skinny Happy Pink cu discrete zgârieturi decorative",
+    "title": "Blugi plus size skinny Happy Pink cu discrete zgârieturi decorative",
     "description": "O pereche de blugi mulatți din denim albastru, cu o croială de tip skinny fit și talie înaltă, prevăzuți cu ușoare efecte prespălate și discrete zgârieturi decorative pe lungime și la tiv, ideali pentru un look casual zilnic, confortabil și versatil.",
     "sizes": "31 - 38",
     "sizeList": [
@@ -367,7 +367,7 @@ export const products: Product[] = [
     "salePrice": 65.9,
     "color": "Albastru",
     "type": "Skinny fit",
-    "plusSize": false,
+    "plusSize": true,
     "stock": {
       "31": 4,
       "32": 4,
@@ -384,7 +384,7 @@ export const products: Product[] = [
   {
     "id": "3079",
     "brand": "HAPPY PINK",
-    "title": "Blugi skinny Happy Pink clasici",
+    "title": "Blugi plus size skinny Happy Pink clasici",
     "description": "O pereche de blugi mulatți din denim albastru închis, cu o croială simplă de tip skinny fit și talie înaltă, ideali pentru a asigura o siluetă definită și un confort sporit în ținutele casual de zi cu zi.",
     "sizes": "31 - 38",
     "sizeList": [
@@ -399,7 +399,7 @@ export const products: Product[] = [
     "salePrice": null,
     "color": "Albastru închis",
     "type": "Skinny fit",
-    "plusSize": false,
+    "plusSize": true,
     "stock": {
       "31": 2,
       "32": 2,
@@ -417,7 +417,7 @@ export const products: Product[] = [
   {
     "id": "3089",
     "brand": "HAPPY PINK",
-    "title": "Blugi skinny Happy Pink cu crăpătură fină pe picior",
+    "title": "Blugi skinny plus size Happy Pink cu crăpătură fină pe picior",
     "description": "O pereche de blugi strâmți din denim albastru, cu o croială skinny fit și talie înaltă, ce se remarcă printr-o mică tăietură decorativă orizontală deasupra genunchiului, perfecți pentru un look casual, modern și plin de stil.",
     "sizes": "31 - 38",
     "sizeList": [
@@ -432,7 +432,7 @@ export const products: Product[] = [
     "salePrice": null,
     "color": "Albastru",
     "type": "Skinny fit",
-    "plusSize": false,
+    "plusSize": true,
     "stock": {
       "31": 2,
       "32": 2,
@@ -548,7 +548,7 @@ export const products: Product[] = [
   {
     "id": "4163",
     "brand": "HAPPY PINK",
-    "title": "Blugi skinny Happy Pink clasici",
+    "title": "Blugi skinny plus size Happy Pink clasici",
     "description": "O piesă de bază în garderoba feminină, acești blugi mizează pe un design simplu și curat, oferind o nuanță intensă de albastru denim și o talie înaltă care flatează silueta, ideali pentru a fi combinați cu sneakerși sau botine în zilele pline",
     "sizes": "31 - 38",
     "sizeList": [
@@ -563,7 +563,7 @@ export const products: Product[] = [
     "salePrice": null,
     "color": "Albastru",
     "type": "Skinny fit",
-    "plusSize": false,
+    "plusSize": true,
     "stock": {
       "31": 1,
       "32": 2,
@@ -658,7 +658,7 @@ export const products: Product[] = [
     ],
     "unitPrice": 68.9,
     "salePrice": null,
-    "color": "Negru spălăcit",
+    "color": "Negru",
     "type": "Skinny fit",
     "plusSize": false,
     "stock": {
@@ -690,7 +690,7 @@ export const products: Product[] = [
     ],
     "unitPrice": 129.9,
     "salePrice": 89.9,
-    "color": "Albastru deschis",
+    "color": "Albastru",
     "type": "Evazați",
     "plusSize": false,
     "stock": {
@@ -720,7 +720,7 @@ export const products: Product[] = [
     ],
     "unitPrice": 149.9,
     "salePrice": 98.9,
-    "color": "Albastru deschis",
+    "color": "Albastru",
     "type": "Evazați",
     "plusSize": false,
     "stock": {
@@ -731,11 +731,11 @@ export const products: Product[] = [
       "30": 2,
       "31": 2
     },
-    "image": "/products/HAPPY PINK/5224/happy-pink-engros-5224-1_MAIN.jpeg",
+    "image": "/products/HAPPY PINK/5224/happy-pink-engros-5224-4_MAIN.jpeg",
     "extraImages": [
+      "/products/HAPPY PINK/5224/happy-pink-engros-5224-1.jpeg",
       "/products/HAPPY PINK/5224/happy-pink-engros-5224-2.jpeg",
-      "/products/HAPPY PINK/5224/happy-pink-engros-5224-3.jpeg",
-      "/products/HAPPY PINK/5224/happy-pink-engros-5224-4.jpeg"
+      "/products/HAPPY PINK/5224/happy-pink-engros-5224-3.jpeg"
     ]
   },
   {
@@ -784,7 +784,7 @@ export const products: Product[] = [
     ],
     "unitPrice": 68.9,
     "salePrice": null,
-    "color": "Albastru deschis",
+    "color": "Albastru",
     "type": "Mom fit",
     "plusSize": false,
     "stock": {
@@ -825,9 +825,9 @@ export const products: Product[] = [
       "42": 2,
       "44": 2
     },
-    "image": "/products/HAPPY PINK/5711/happy-pink-engros-5711-1_MAIN.jpeg",
+    "image": "/products/HAPPY PINK/5711/happy-pink-engros-5711-2_MAIN.jpeg",
     "extraImages": [
-      "/products/HAPPY PINK/5711/happy-pink-engros-5711-2.jpeg"
+      "/products/HAPPY PINK/5711/happy-pink-engros-5711-1.jpeg"
     ]
   },
   {
@@ -1541,7 +1541,7 @@ export const products: Product[] = [
     ],
     "unitPrice": 89.9,
     "salePrice": null,
-    "color": "Albastru deschis",
+    "color": "Albastru",
     "type": "Evazați",
     "plusSize": false,
     "stock": {
@@ -1573,7 +1573,7 @@ export const products: Product[] = [
     ],
     "unitPrice": 149.9,
     "salePrice": 99.9,
-    "color": "Gri antracit",
+    "color": "Gri",
     "type": "Wide leg",
     "plusSize": false,
     "stock": {
@@ -1698,7 +1698,7 @@ export const products: Product[] = [
     ],
     "unitPrice": 58.9,
     "salePrice": null,
-    "color": "Albastru deschis",
+    "color": "Albastru",
     "type": "Scurt",
     "plusSize": false,
     "stock": {
@@ -1729,7 +1729,7 @@ export const products: Product[] = [
     ],
     "unitPrice": 58.9,
     "salePrice": null,
-    "color": "Albastru deschis",
+    "color": "Albastru",
     "type": "Scurt",
     "plusSize": false,
     "stock": {
@@ -1850,8 +1850,8 @@ export const products: Product[] = [
     ],
     "unitPrice": 98.9,
     "salePrice": 68.9,
-    "color": "Negru",
-    "type": "Baggy fit",
+    "color": "Alb",
+    "type": "Pantaloni trening",
     "plusSize": false,
     "stock": {
       "s": 1,
@@ -2093,7 +2093,7 @@ export const products: Product[] = [
     ],
     "unitPrice": 78.8,
     "salePrice": null,
-    "color": "Albastru deschis",
+    "color": "Albastru",
     "type": "Fustă",
     "plusSize": false,
     "stock": {
@@ -2169,7 +2169,7 @@ export const products: Product[] = [
   {
     "id": "1069",
     "brand": "NYC",
-    "title": "Blugi slim fit NYC albastru închis cu talie înaltă",
+    "title": "Blugi slim fit plus size NYC albastru închis cu talie înaltă",
     "description": "O pereche de blugi din denim albastru închis cu croială slim fit și talie înaltă, cu efect ușor decolorat pe coapse și un design curat și clasic, perfecți pentru un look casual elegant și versatil de zi cu zi.",
     "sizes": "30 - 36",
     "sizeList": [
@@ -2185,7 +2185,7 @@ export const products: Product[] = [
     "salePrice": null,
     "color": "Albastru închis",
     "type": "Skinny fit",
-    "plusSize": false,
+    "plusSize": true,
     "stock": {
       "30": 1,
       "31": 2,
@@ -2203,7 +2203,7 @@ export const products: Product[] = [
   {
     "id": "1070",
     "brand": "NYC",
-    "title": "Blugi skinny fit NYC albastru cu talie înaltă",
+    "title": "Blugi skinny fit plus size NYC albastru cu talie înaltă",
     "description": "O pereche de blugi din denim albastru cu croială skinny fit și talie înaltă, cu efect ușor decolorat pe coapse și un design curat și clasic, perfecți pentru un look casual elegant și feminin de zi cu zi.",
     "sizes": "30 - 36",
     "sizeList": [
@@ -2217,9 +2217,9 @@ export const products: Product[] = [
     ],
     "unitPrice": 59.9,
     "salePrice": null,
-    "color": "Albastru",
+    "color": "Albastru închis",
     "type": "Skinny fit",
-    "plusSize": false,
+    "plusSize": true,
     "stock": {
       "30": 3,
       "31": 6,
@@ -2237,7 +2237,7 @@ export const products: Product[] = [
   {
     "id": "1074",
     "brand": "NYC",
-    "title": "Blugi skinny fit NYC albastru închis cu talie înaltă",
+    "title": "Blugi skinny fit plus size NYC albastru închis cu talie înaltă",
     "description": "O pereche de blugi din denim albastru închis cu croială skinny fit și talie înaltă, cu un design curat și minimalist fără efect decolorat, mulați pe corp și extrem de versatili, perfecți pentru un look casual sau semi-formal de zi cu zi.",
     "sizes": "30 - 36",
     "sizeList": [
@@ -2253,7 +2253,7 @@ export const products: Product[] = [
     "salePrice": null,
     "color": "Albastru închis",
     "type": "Skinny fit",
-    "plusSize": false,
+    "plusSize": true,
     "stock": {
       "30": 3,
       "31": 6,
@@ -2271,7 +2271,7 @@ export const products: Product[] = [
   {
     "id": "1075",
     "brand": "NYC",
-    "title": "Blugi skinny fit NYC albastru navy cu talie înaltă",
+    "title": "Blugi skinny fit plus size NYC albastru navy cu talie înaltă",
     "description": "O pereche de blugi din denim albastru navy intens cu croială skinny fit și talie înaltă, cu un design curat și minimalist, mulați pe corp și extrem de versatili, perfecți pentru un look casual sau semi-formal elegant de zi cu zi.",
     "sizes": "30 - 36",
     "sizeList": [
@@ -2285,9 +2285,9 @@ export const products: Product[] = [
     ],
     "unitPrice": 59.9,
     "salePrice": null,
-    "color": "Albastru denim",
+    "color": "Albastru închis",
     "type": "Skinny fit",
-    "plusSize": false,
+    "plusSize": true,
     "stock": {
       "30": 3,
       "31": 6,
@@ -2399,7 +2399,7 @@ export const products: Product[] = [
   {
     "id": "2000",
     "brand": "NYC",
-    "title": "Blugi slim fit NYC albastru cu efect decolorat și abraziuni",
+    "title": "Blugi slim fit plus size NYC albastru cu efect decolorat și abraziuni",
     "description": "O pereche de blugi din denim albastru cu croială slim fit și talie medie, cu efect decolorat pe coapse și mici abraziuni subtile, perfecți pentru un look casual modern și relaxat de zi cu zi.",
     "sizes": "42 - 52",
     "sizeList": [
@@ -2627,7 +2627,7 @@ export const products: Product[] = [
     ],
     "unitPrice": 98.9,
     "salePrice": null,
-    "color": "Albastru deschis",
+    "color": "Albastru",
     "type": "Mom fit",
     "plusSize": true,
     "stock": {
@@ -2719,7 +2719,7 @@ export const products: Product[] = [
     ],
     "unitPrice": 98.9,
     "salePrice": null,
-    "color": "Albastru mediu",
+    "color": "Albastru",
     "type": "Skinny fit",
     "plusSize": true,
     "stock": {
@@ -2777,7 +2777,7 @@ export const products: Product[] = [
     ],
     "unitPrice": 68.9,
     "salePrice": null,
-    "color": "Albastru deschis",
+    "color": "Albastru",
     "type": "Skinny fit",
     "plusSize": false,
     "stock": {
@@ -2809,7 +2809,7 @@ export const products: Product[] = [
     ],
     "unitPrice": 78.8,
     "salePrice": null,
-    "color": "Albastru deschis",
+    "color": "Albastru",
     "type": "Skinny fit",
     "plusSize": false,
     "stock": {
@@ -2921,7 +2921,7 @@ export const products: Product[] = [
   {
     "id": "543",
     "brand": "Powermix",
-    "title": "Blugi skinny Powermix cu rupturi texturate",
+    "title": "Blugi skinny plus size Powermix cu rupturi texturate",
     "description": "Pantaloni realizați din denim albastru închis intens, prevăzuți cu două rupturi peticite și texturate pe picioare. Modelul are o croială skinny mulată, talie înaltă și buzunare clasice frontale și posterioare, fiind confecționați dintr-un material elastic ce oferă flexibilitate.",
     "sizes": "30 - 36",
     "sizeList": [
@@ -2936,7 +2936,7 @@ export const products: Product[] = [
     "salePrice": null,
     "color": "Albastru închis",
     "type": "Skinny fit",
-    "plusSize": false,
+    "plusSize": true,
     "stock": {
       "30": 2,
       "31": 2,
@@ -2951,7 +2951,7 @@ export const products: Product[] = [
   {
     "id": "544",
     "brand": "Powermix",
-    "title": "Blugi drepti Powermix cu zgârieturi discrete",
+    "title": "Blugi drepti plus size Powermix cu zgârieturi discrete",
     "description": "Pantaloni confecționați din denim albastru cu un aspect ușor prespălat, decorați cu zgârieturi fine și discrete pe picioare. Modelul dispune de o croială dreaptă clasică, talie înaltă, închidere cu nasture și fermoar, fiind realizat dintr-un material stabil ce urmărește linia piciorului.",
     "sizes": "30 - 36",
     "sizeList": [
@@ -2966,7 +2966,7 @@ export const products: Product[] = [
     "salePrice": null,
     "color": "Albastru",
     "type": "Drepți",
-    "plusSize": false,
+    "plusSize": true,
     "stock": {
       "30": 3,
       "31": 3,
@@ -2994,7 +2994,7 @@ export const products: Product[] = [
     ],
     "unitPrice": 55.9,
     "salePrice": null,
-    "color": "Albastru deschis",
+    "color": "Albastru",
     "type": "Skinny fit",
     "plusSize": false,
     "stock": {
