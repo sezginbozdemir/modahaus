@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { TbZoomInFilled } from "react-icons/tb";
+import { useSwipeable } from "react-swipeable";
 import { GalleryImage } from "./gallery-image";
 
 interface Props {
@@ -9,7 +11,6 @@ interface Props {
   title: string;
   prevImg: (e: React.MouseEvent) => void;
   nextImg: (e: React.MouseEvent) => void;
-
   isOut: boolean;
   hasSale: boolean;
   discountPct: number | null;
@@ -31,16 +32,44 @@ export function ProductCardImage({
 }: Props) {
   const showSale = hasSale && !isOut;
   const showLimited = isLimited && !isOut;
+  const [isDragging, setIsDragging] = useState(false);
+
+  const swipeHandlers = useSwipeable({
+    onSwiping: () => setIsDragging(true),
+    onSwiped: () => {
+      setTimeout(() => setIsDragging(false), 0);
+    },
+    onSwipedLeft: () => {
+      if (images.length > 1) {
+        setCurrentImg((currentImg + 1) % images.length);
+      }
+    },
+    onSwipedRight: () => {
+      if (images.length > 1) {
+        setCurrentImg((currentImg - 1 + images.length) % images.length);
+      }
+    },
+    preventScrollOnSwipe: false,
+    trackMouse: true,
+  });
 
   return (
-    <div className="relative overflow-hidden bg-gray-50 group cursor-pointer">
+    <div
+      {...swipeHandlers}
+      onClickCapture={(e) => {
+        if (isDragging) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+      }}
+      className="relative overflow-hidden bg-gray-50 group cursor-pointer select-none"
+    >
       <GalleryImage
         images={images}
         currentIdx={currentImg}
         alt={`${title} Cod ${id}`}
         productId={id}
       />
-
       {showSale && (
         <div className="absolute top-2 left-2 pointer-events-none">
           <span className="inline-flex items-center gap-1 rounded-md bg-red-600 text-white text-[11px] font-semibold px-2 py-1 shadow">
