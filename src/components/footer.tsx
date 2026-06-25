@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import { CONFIG, buildWhatsAppGeneralLink } from "../config";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import { LEGAL_DOCS, LegalDocKey } from "../content/legal";
 import { InfoModal } from "./info-modal";
@@ -148,6 +148,17 @@ export function Footer() {
                 <span>+{CONFIG.whatsappNumber}</span>
               </div>
 
+              <div className="flex items-center gap-2">
+                <FaEnvelope className="text-white/70" />
+
+                <a
+                  href={`mailto:${CONFIG.email}`}
+                  className="hover:text-white transition-colors"
+                >
+                  {CONFIG.email}
+                </a>
+              </div>
+
               <div className="text-xs text-gray-500 leading-relaxed pt-2">
                 {CONFIG.companyLegalName}
                 <br />
@@ -157,7 +168,6 @@ export function Footer() {
               </div>
             </div>
           </div>
-
           {/* Legal (modal) */}
           <div className="space-y-2 text-sm">
             <FooterTitle>Legal</FooterTitle>

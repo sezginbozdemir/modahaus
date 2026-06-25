@@ -8,6 +8,7 @@ export const CONFIG = {
   companyLegalName: "SC ERCONF SRL",
   companyCUI: "RO9638399",
   companyRegCom: "J40/6163/1997",
+  email: "contact@modahaus.ro",
 } as const;
 
 export function buildWhatsAppLink(productId: string): string {
