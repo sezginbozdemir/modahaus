@@ -69,7 +69,7 @@ export function ModalImageGallery({
     onSwiped: () => setTimeout(() => setIsDragging(false), 0),
     onSwipedLeft: () => images.length > 1 && goNext(),
     onSwipedRight: () => images.length > 1 && goPrev(),
-    preventScrollOnSwipe: true, // modal context: ok to capture horizontal gesture fully
+    preventScrollOnSwipe: true,
     trackMouse: true,
   });
 
@@ -114,7 +114,10 @@ export function ModalImageGallery({
           enableTransition ? "transition-transform duration-300" : ""
         }`}
         style={{
-          transform: `translateX(-${slidePos * 100}%)`,
+          transform:
+            images.length > 1
+              ? `translateX(-${slidePos * 100}%)`
+              : "translateX(0%)",
         }}
       >
         {images.length > 1
